@@ -1,9 +1,31 @@
 class LearningPath {
-
-}
-
-const escuelaWeb = new LearningPath();
-const escuelaData = new LearningPath();
+    constructor({
+      name,
+      courses = [],
+    }) {
+      this.name = name;
+      this.courses = courses;
+    }
+  }
+  
+  const escuelauno = new LearningPath({
+    name: "Escuela 369",
+    courses: [
+      "curso 3",
+      "curso 6",
+      "curso 9",
+    ],
+  });
+  
+  const escuelados = new LearningPath({
+    name: "Escuela 963",
+    courses: [
+      "curso 11",
+      "curso 23",
+      "curso 66",
+    ],
+  });
+  
 
 class Student {
   constructor({
@@ -27,15 +49,14 @@ class Student {
   }
 }
 
+
+
 const esteban33 = new Student({
   name: "esteban33",
   username: "ebo010",
   email: "ebo@gmail.com",
   twitter: "ebo010twitter",
-  learningPaths: [
-    escuelaWeb,
-    escuelaData,
-  ],
+  learningPaths: [escuelauno]
 });
 
 const michelon = new Student({
@@ -43,8 +64,5 @@ const michelon = new Student({
   username: "michelon6",
   email: "michel@hotmail.com",
   instagram: "michelinsta",
-  learningPaths: [
-    escuelaWeb,
-    escuelaData,
-  ],
+  learningPaths: [escuelados],
 });
