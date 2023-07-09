@@ -38,7 +38,7 @@ const esteban33 = new Student({
   ],
 });
 
-const miguelito2 = new Student({
+const michelon = new Student({
   name: "Michelon6",
   username: "michelon6",
   email: "michel@hotmail.com",
